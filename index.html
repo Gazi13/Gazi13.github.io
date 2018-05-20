@@ -1,0 +1,59 @@
+<html>
+<head>
+ <link href ="style.css" rel="stylesheet" type="text/css">
+
+</head>
+  
+<body>
+<script src ="script.js"></script>    
+    
+    	
+<center><table border=2>
+			<tr>
+				<td><a href="#">Home</a></td>
+				<td><a href="#">Local Dishes</a></td>
+				<td><a href="#">Historical Places</a></td>
+				<td><a href="#">Useful Links</a></td>
+				<td><a href="#">About Me</a></td>
+				<td><a href="#">Contact Me</a></td>
+				<td><a href="#">Registration</a></td>
+			</tr>
+		
+    </table></center>
+    
+    
+<form name="RegForm" action="calculator.html" onsubmit="return CheckValidation()" method="post" accept-charset="UTF-8"> 
+     
+    <p>Name: <input type="text" size=45 name="Name" > </p><br>       
+    <p> Surname: <input type="text" size=45 name="Surname">  </p><br>
+    <p>E-mail: <input type="text" size=45 name="Email">  </p><br>
+     <p>Password: <input type="text" size=45 name="Password"> </p>
+  <p id="note">The password must have  <b>special character</b>,<b>numerical digit</b>,<b>capital letter</b> and it must be between  <b>6-15 </b>characters.<p>
+    <p>DateofBirth: <input type="text" size=45 name="DateofBirth"> </p><br>  
+          
+    <p>Gender 
+        
+		<select type="text" value="" name="Subject">
+			<option>Choose</option>
+			<option>Male</option>
+			<option>Female</option>
+			<option>Other</option>
+	
+		</select></p><br><br>
+       <h3>İnterests:</h3>
+       <p><input type="checkbox">Movie</p>
+        <p><input type="checkbox">Spor</p>
+        <p><input type="checkbox">Music</p>
+        <p><input type="checkbox">Coding</p>
+
+
+    <p><input type="submit" value="Submit" name="Submit">     
+        <input type="reset" value="Reset" name="Reset">  
+    </p>         
+    
+
+
+
+</form>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<html>  
+   <head>
+  <title>calculator</title>
+   
+   
+   <style>
+       .btn btn{
+           margin: 30px;
+       }
+       #resultsbox{
+           margin-top: 50px;
+           margin-bottom: 10px;    
+       }
+       
+       </style>
+    </head>
+      <body>
+       <center> 
+  <form name="board" id="board">  
+     <input type="text" id="resultsbox" style="text-align:center;background:white;border:3px solid gray;" disabled="disabled">  
+    </form>  
+  
+    <table style="border: 2px solid gray; height: 300px; width: 150px;"> 
+    
+     
+      <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
+  <script src ="script.js"></script>
+
+  <tr class="row">  
+      <td><input type="button"   class="btn btn" value="7" onclick="board.resultsbox.value += '7'"></td>  
+      <td><input type="button"  class="btn btn" value="8" onclick="board.resultsbox.value += '8'"></td>  
+      <td><input type="button"  class="btn btn" value="9" onclick="board.resultsbox.value += '9'"></td>  
+      
+  </tr>  
+   <tr class="row">  
+      <td><input type="button"   class="btn btn" value="4" onclick="board.resultsbox.value += '4'"></td>  
+      <td><input type="button" class="btn btn"  value="5" onclick="board.resultsbox.value += '5'"></td>  
+      <td><input type="button"  class="btn btn" value="6" onclick="board.resultsbox.value += '6'"></td>  
+  </tr>  
+   <tr class="row">  
+      <td><input type="button"  class="btn btn" value="1" onclick="board.resultsbox.value += '1'"></td>  
+      <td><input type="button"  class="btn btn" value="2" onclick="board.resultsbox.value += '2'"></td>  
+      <td><input type="button"  class="btn btn" value="3" onclick="board.resultsbox.value += '3'"></td>  
+     
+  </tr>  
+     <tr class="row">  
+      <td><input type="button"   class="btn btn"  value="0" onclick="board.resultsbox.value += '0'"></td>  
+      <td><input type="button"  class="btn btn" value="."   onclick="board.resultsbox.value += '.' "></td>  
+      <td><input type="button" class="btn btn"  value="/"   onclick="board.resultsbox.value += '/'" ></td> 
+  </tr>  
+ <tr class="row">  
+   
+    <td ><input type="button"  class="btn btn" onclick="board.resultsbox.value += '+'" value ="+"></td>  
+    <td ><input type="button"  class="btn btn" onclick="board.resultsbox.value += '-'" value ="-"></td>  
+      <td><input type="button" class="btn btn"  value="*"   onclick="board.resultsbox.value += '*'"></td>  
+ 
+ </tr>  
+     <tr class="row">
+     <td ><input type="button"  class="btn btn" onclick="board.resultsbox.value = 1/(board.resultsbox.value)" value ="1/x"></td>
+      <td><input type="button"  class="btn btn" value="C" onclick="board.resultsbox.value = ''"></td>   
+       <td><input type="button"  class="btn btn" onclick="board.resultsbox.value = eval(board.resultsbox.value)" value ="="></td>  
+     </tr>
+    </table>  
+    </center>
+    </body>
+</html>
